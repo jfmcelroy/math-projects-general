@@ -39,13 +39,13 @@ print('largest allowed coefficient:', u)
 # computing nonnegative integer linear combinations 
 # for now, run some for loops and then count matches afterwords
 for i in range(u+1):
-  for j in range(u+1):
-    for k in range(u+1):
-      for m in range(u+1):
-        for n in range(u+1):
-          for o in range(u+1):
-            for p in range(u+1):
-              print(i*l[0]+j*l[1])
+  for j in range(u+1-i):
+    for k in range(u+1-i-j):
+      for m in range(u+1-i-j-k):
+        for n in range(u+1-i-j-k-m):
+          for o in range(u+1-i-j-k-m-n):
+            for p in range(u+1-i-j-k-m-n-o):
+              print(i*l[0]+j*l[1]+k*l[2]+m*l[3])
 
 # count matches 
 
