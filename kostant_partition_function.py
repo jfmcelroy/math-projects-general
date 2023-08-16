@@ -52,6 +52,8 @@ for i in range(u+1):
 
 print('K_G(', a, ')=', match)
 
+###### HEY DON'T FORGET LAST ENTRY OF a SHOULD ALWAYS BE 0 #######
+
 # count matches 
 
 # print matches?
