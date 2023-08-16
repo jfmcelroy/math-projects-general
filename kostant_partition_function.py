@@ -24,13 +24,15 @@ print('multiset of roots:')
 for i in range(7):
   print(l[i])
 
-# target vector(s)
+# target vector(s) aka netflows
+# for now, enter these manually
+# hopefully i'll get the composition generator program working evenutally
 targets = [np.array([2,-1,-1,0]), np.array([1,0,-1,0]), np.array([0,1,-1,0]), np.array([1,-1,0,0]), np.array([0,0,0,0])]
 
 for a in targets:
+  print('target vector:', a)
   u = 3 # upper bound for nonnegative integer coefficients | for now, set via observation (won't the largest entry in the target vector suffice?)
   print('largest allowed coefficient:', u)
-  print('target vector:', a)
   combo = np.array([0,0,0,0]) # stores the result of the nonnegative integer linear combination 
   match = 0 # counter for matches
   for i in range(u+1):
@@ -45,15 +47,3 @@ for a in targets:
                   print(i,j,k,m,n,o,p)
                   match += 1
   print('K_G(', a, ')=', match)
-
-
-# computing nonnegative integer linear combinations 
-# for now, run some for loops and then count matches afterwords
-
-
-###### HEY DON'T FORGET LAST ENTRY OF a SHOULD ALWAYS BE 0 #######
-
-# count matches 
-
-# print matches?
-
