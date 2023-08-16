@@ -24,15 +24,16 @@ print('multiset of roots:')
 for i in range(7):
   print(l[i])
 
+# target vector(s)
+netflows = [np.array([2,-1,-1,0]), np.array([1,0,-1,0]), np.array([0,1,-1,0]), np.array([1,-1,0,0]), np.array([0,0,0,0])]
+
 # set upper bound for nonnegative integer coefficients
 # for now, this can be set via observation
 # won't the largest entry in the target vector suffice?
-u = 2
-print('largest allowed coefficient:', u)
 
-# target vector(s)
-netflows = [np.array([2,-1,-1,0]), np.array([1,0,-1,0]), np.array([0,1,-1,0]), np.array([1,-1,0,0]), np.array([0,0,0,0])]
 for a in netflows:
+  u = numpy.amax(a)
+  print('largest allowed coefficient:', u)
   print('target vector:', a)
   combo = np.array([0,0,0,0]) # stores the result of the nonnegative integer linear combination 
   match = 0 # counter for matches
