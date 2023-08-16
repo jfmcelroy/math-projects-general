@@ -25,9 +25,9 @@ e7 = np.array([0,0,1,-1])
 # put edge set into a list/tuple to make loopable
 l = [e1,e2,e3,e4,e5,e6,e7]
 t = (e1,e2,e3,e4,e5,e6,e7)
-print('multiset of roots:', l)
-#for i in range(7):
-#  print(l[i])
+print('multiset of roots:')
+for i in range(7):
+  print(l[i])
 #  print(t[i])
 
 # set upper bound for nonnegative integer coefficients
