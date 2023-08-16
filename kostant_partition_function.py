@@ -8,9 +8,10 @@
 # from multiset import * # this package may not be necessary
 import numpy as np
 
-# target vector
-a = np.array([2,-1,-1,0])
-print('target vector:', a)
+# target vector(s)
+netflows = [np.array([2,-1,-1,0]), np.array([1,0,-1,0]), np.array([0,1,-1,0]), np.array([1,-1,0,0]), np.array([0,0,0,0])]
+for a in netflows:
+  print('target vector:', a)
 
 # multiset of type A_n roots based on the edge set of G
 # for now, enter this manually
@@ -51,6 +52,7 @@ for i in range(u+1):
                 match += 1
 
 print('K_G(', a, ')=', match)
+
 
 ###### HEY DON'T FORGET LAST ENTRY OF a SHOULD ALWAYS BE 0 #######
 
