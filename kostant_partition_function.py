@@ -47,7 +47,7 @@ for i in range(u+1):
             for p in range(u+1-i-j-k-m-n-o):
               combo = i*l[0]+j*l[1]+k*l[2]+m*l[3]+n*l[4]+o*l[5]+p*l[6]
               if np.array_equal(combo,a) == True:
-                print(combo)
+                print(i,j,k,m,n,o,p)
                 match += 1
 
 print('K_G(', a, ')=', match)
