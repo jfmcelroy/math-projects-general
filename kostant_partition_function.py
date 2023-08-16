@@ -1,6 +1,6 @@
 # kostant_partition_function.py
 #
-# goal: compute values for kostant partition function
+# goal: compute values for Kostant partition function
 #
 # input: n: length, S: multiset of type A_(n-1) roots, a: length n integer vector
 # output: nonnegative integer (representing the number of nonnegative integer linear combinations of S_G that equate to a)
@@ -8,9 +8,11 @@
 # from multiset import * # this package may not be necessary
 import numpy as np
 
-# '''Compute the Kostant partition function K_G(a) for a multiset S of type A_{n-1} roots'''
+# target vector
+a = np.array([2,-1,-1,0])
+print('target vector:', a)
 
-# Edge set of type A_n roots
+# multiset of type A_n roots based on the edge set of G
 # for now, enter this manually
 e1 = np.array([1,-1,0,0])
 e2 = np.array([1,-1,0,0])
@@ -20,11 +22,21 @@ e5 = np.array([0,1,0,-1])
 e6 = np.array([0,0,1,-1])
 e7 = np.array([0,0,1,-1])
 
-# put edge set into a list to make loopable
+# put edge set into a list/tuple to make loopable
 l = [e1,e2,e3,e4,e5,e6,e7]
 t = (e1,e2,e3,e4,e5,e6,e7)
-for i in range(7):
-  print(l[i])
-  print(t[i])
+print('multiset of roots:', l)
+#for i in range(7):
+#  print(l[i])
+#  print(t[i])
 
-# Computing nonnegative integer linear combinations 
+# set upper bound for nonnegative integer coefficients
+# for now, this can be set via observation
+u = 2
+
+# computing nonnegative integer linear combinations 
+# for now, run some for loops and then count matches afterwords
+
+# count matches 
+
+# print matches?
