@@ -32,11 +32,22 @@ for i in range(7):
 
 # set upper bound for nonnegative integer coefficients
 # for now, this can be set via observation
+# won't the largest entry in the target vector suffice?
 u = 2
+print('largest allowed coefficient:' u)
 
 # computing nonnegative integer linear combinations 
 # for now, run some for loops and then count matches afterwords
+for i in range(u+1):
+  for j in range(u+1):
+    for k in range(u+1):
+      for m in range(u+1):
+        for n in range(u+1):
+          for o in range(u+1):
+            for p in range(u+1):
+              print(i*l[0])
 
 # count matches 
 
 # print matches?
+
