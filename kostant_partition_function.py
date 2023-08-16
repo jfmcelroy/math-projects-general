@@ -39,12 +39,12 @@ print('largest allowed coefficient:', u)
 combo = np.array([0,0,0,0]) # stores the result of the nonnegative integer linear combination 
 match = 0 # counter for matches
 for i in range(u+1):
-  for j in range(u+1-i):
-    for k in range(u+1-i-j):
-      for m in range(u+1-i-j-k):
-        for n in range(u+1-i-j-k-m):
-          for o in range(u+1-i-j-k-m-n):
-            for p in range(u+1-i-j-k-m-n-o):
+  for j in range(u+1):
+    for k in range(u+1):
+      for m in range(u+1):
+        for n in range(u+1):
+          for o in range(u+1):
+            for p in range(u+1):
               combo = i*l[0]+j*l[1]+k*l[2]+m*l[3]+n*l[4]+o*l[5]+p*l[6]
               if np.array_equal(combo,a) == True:
                 print(i,j,k,m,n,o,p)
