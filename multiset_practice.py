@@ -10,4 +10,4 @@ print(Multiset())
 print(Multiset('abcde'))
  
 # print multiset from mapping
-print(Multiset({'a': 4, 'b': 2, 'c': 3, 'd':1}))
+print(Multiset({(1,-1,0,0): 2, {(1,0,0,-1): 1, (0,1,-1,0): 2, (0,0,1,-1): 2}))
