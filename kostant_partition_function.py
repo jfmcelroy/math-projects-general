@@ -22,13 +22,11 @@ e5 = np.array([0,1,0,-1])
 e6 = np.array([0,0,1,-1])
 e7 = np.array([0,0,1,-1])
 
-# put edge set into a list/tuple to make loopable
+# put edge set into a list to make loopable
 l = [e1,e2,e3,e4,e5,e6,e7]
-t = (e1,e2,e3,e4,e5,e6,e7)
 print('multiset of roots:')
 for i in range(7):
   print(l[i])
-#  print(t[i])
 
 # set upper bound for nonnegative integer coefficients
 # for now, this can be set via observation
@@ -45,7 +43,7 @@ for i in range(u+1):
         for n in range(u+1-i-j-k-m):
           for o in range(u+1-i-j-k-m-n):
             for p in range(u+1-i-j-k-m-n-o):
-              print(i*l[0]+j*l[1]+k*l[2]+m*l[3])
+              print(i*l[0]+j*l[1]+k*l[2]+m*l[3]+n*l[4]+o*l[5]+p*l[6])
 
 # count matches 
 
