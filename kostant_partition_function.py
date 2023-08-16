@@ -48,9 +48,9 @@ for i in range(u+1):
               combo = i*l[0]+j*l[1]+k*l[2]+m*l[3]+n*l[4]+o*l[5]+p*l[6]
               if combo.all() == a.all():
                 print(combo)
-                z += 1
+                match += 1
 
-print('K_G(', a, ')=', z)
+print('K_G(', a, ')=', match)
 
 # count matches 
 
