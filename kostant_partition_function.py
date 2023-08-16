@@ -21,15 +21,9 @@ e6 = np.array([0,0,1,-1])
 e7 = np.array([0,0,1,-1])
 
 # put edge set into a list to make loopable
-t = [e1,e2,e3,e4,e5,e6,e7]
+l = [e1,e2,e3,e4,e5,e6,e7]
+print(l)
+t = (e1,e2,e3,e4,e5,e6,e7)
 print(t)
 
 # Computing nonnegative integer linear combinations 
-for i in range(2):
-  print(i*e1)
-  print(i*e2)
-  print(i*e3)
-  print(i*e4)
-  print(i*e5)
-  print(i*e6)
-  print(i*e7)
