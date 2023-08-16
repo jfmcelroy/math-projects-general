@@ -32,7 +32,7 @@ netflows = [np.array([2,-1,-1,0]), np.array([1,0,-1,0]), np.array([0,1,-1,0]), n
 # won't the largest entry in the target vector suffice?
 
 for a in netflows:
-  u = numpy.amax(a)
+  u = a.max
   print('largest allowed coefficient:', u)
   print('target vector:', a)
   combo = np.array([0,0,0,0]) # stores the result of the nonnegative integer linear combination 
