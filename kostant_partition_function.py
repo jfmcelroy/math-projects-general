@@ -46,7 +46,7 @@ for i in range(u+1):
           for o in range(u+1-i-j-k-m-n):
             for p in range(u+1-i-j-k-m-n-o):
               combo = i*l[0]+j*l[1]+k*l[2]+m*l[3]+n*l[4]+o*l[5]+p*l[6]
-              if combo == a:
+              if np.array_equal(combo,a) == True:
                 print(combo)
                 match += 1
 
