@@ -30,11 +30,11 @@ for i in range(9):
 # target vector(s) aka netflows
 # for now, enter these manually
 # hopefully i'll get the composition generator program working evenutally
-targets = [np.array([3,-1,-1,-1])]
+targets = [np.array([3,-1,-1,-1,0])]
 
 for a in targets:
   # print('target vector:', a) 
-  u = 4 # upper bound for nonnegative integer coefficients | for now, set via observation (won't the largest entry in the target vector suffice?)
+  u = 3 # upper bound for nonnegative integer coefficients | for now, set via observation (won't the largest entry in the target vector suffice?)
   print('largest allowed coefficient:', u)
   combo = np.array([0,0,0,0,0]) # stores the result of the nonnegative integer linear combination 
   match = 0 # counter for matches
@@ -51,4 +51,4 @@ for a in targets:
                     if np.array_equal(combo,a) == True:
                       # print(i,j,k,m,n,o,p) # takes up a lot of space
                       match += 1
-  print('K_G(', a, ')=', match)
+  print('K_G(', a, ') =', match)
