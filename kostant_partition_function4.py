@@ -30,12 +30,12 @@ for i in range(9):
 # target vector(s) aka netflows
 # for now, enter these manually
 # hopefully i'll get the composition generator program working evenutally
-targets = [np.array([3,-1,-1,-1,0])]
+targets = [np.array([3,-1,-1,-1,0]), np.array([2,0,-1,-1,0]), np.array([1,1,-1,-1,0]), np.array([0,2,-1,-1,0]), np.array([2,-1,0,-1,0]), np.array([1,0,0,-1,0]), np.array([0,1,0,-1,0]), np.array([1,-1,2,-1,0]), np.array([0,0,1,-1,0]), np.array([2,-1,-1,0,0]), np.array([1,0-1,0,0]), np.array([0,1,-1,0,0]), np.array([1,-1,0,0,0]), np.array([0,0,0,0,0]) ]
 
 for a in targets:
   # print('target vector:', a) 
   u = 3 # upper bound for nonnegative integer coefficients | for now, set via observation (won't the largest entry in the target vector suffice?)
-  print('largest allowed coefficient:', u)
+  # print('largest allowed coefficient:', u)
   combo = np.array([0,0,0,0,0]) # stores the result of the nonnegative integer linear combination 
   match = 0 # counter for matches
   for i in range(u+1):
