@@ -41,18 +41,20 @@ for a in targets:
   combo = np.array([0,0,0,0,0,0]) # stores the result of the nonnegative integer linear combination 
   match = 0 # counter for matches
   for j0 in range(u+1):
-    for j1 in range(u+1):
-      for j2 in range(u+1):
-        for j3 in range(u+1):
-          for j4 in range(u+1):
-            for j5 in range(u+1):
-              for j6 in range(u+1):
-                for j7 in range(u+1):
-                  for j8 in range(u+1):
-                    for j9 in range(u+1):
-                      for j10 in range(u+1): 
-                        combo = j0*l[0]+j1*l[1]+j2*l[2]+j3*l[3]+j4*l[4]+j5*l[5]+j6*l[6]+j7*l[7]+j8*l[8]+j9*l[9]+j10*l[10]
-                        if np.array_equal(combo,a) == True:
-                          # print(i,j,k,m,n,o,p) # takes up a lot of space
-                          match += 1
+    if j0*l[0][0]+j1*l[1][0] <= a[0]:
+      for j1 in range(u+1):
+        if j0*l[0][0] <= a[0]:
+          for j2 in range(u+1):
+            for j3 in range(u+1):
+              for j4 in range(u+1):
+                for j5 in range(u+1):
+                  for j6 in range(u+1):
+                    for j7 in range(u+1):
+                      for j8 in range(u+1):
+                        for j9 in range(u+1):
+                          for j10 in range(u+1): 
+                            combo = j0*l[0]+j1*l[1]+j2*l[2]+j3*l[3]+j4*l[4]+j5*l[5]+j6*l[6]+j7*l[7]+j8*l[8]+j9*l[9]+j10*l[10]
+                            if np.array_equal(combo,a) == True:
+                              # print(i,j,k,m,n,o,p) # takes up a lot of space
+                              match += 1
   print('K_G(', a, ') =', match)
