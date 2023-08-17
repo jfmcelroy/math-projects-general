@@ -1,8 +1,9 @@
-# kostant_partition_function.py
+# kostant_partition_function3.py
 #
 # goal: compute values for Kostant partition function
 #
-# input: n: length, S: multiset of type A_(n-1) roots, a: length n integer vector
+# for n=3, 
+# input: a multiset of type A_3 roots, a list of length 4 integer vector targets (netflows)
 # output: nonnegative integer (representing the number of nonnegative integer linear combinations of S_G that equate to a)
 
 # from multiset import * # this package may not be necessary
