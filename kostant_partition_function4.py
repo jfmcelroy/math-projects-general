@@ -13,11 +13,11 @@ import numpy as np
 # for now, enter this manually
 e0 = np.array([1,-1,0,0,0])
 e1 = np.array([1,-1,0,0,0])
-e2 = np.array([1,0,0,-1,0])
+e2 = np.array([1,0,-1,0,0])
 e3 = np.array([0,1,-1,0,0])
-e4 = np.array([0,1,-1,0,0])
+e4 = np.array([0,1,0,0,-1])
 e5 = np.array([0,0,1,-1,0])
-e6 = np.array([0,0,1,0,-1])
+e6 = np.array([0,0,1,-1,0])
 e7 = np.array([0,0,0,1,-1])
 e8 = np.array([0,0,0,1,-1])
 
