@@ -1,4 +1,4 @@
-# kostant_partition_function4.py
+# kpf4.py
 #
 # goal: compute values for Kostant partition function
 #
