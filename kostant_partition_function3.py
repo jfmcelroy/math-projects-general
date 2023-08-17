@@ -47,4 +47,4 @@ for a in targets:
                 if np.array_equal(combo,a) == True:
                   print(i,j,k,m,n,o,p)
                   match += 1
-  print('K_G(', a, ')=', match)
+  print('K_G(', a, ') =', match)
