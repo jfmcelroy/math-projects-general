@@ -41,9 +41,9 @@ for a in targets:
   combo = np.array([0,0,0,0,0,0]) # stores the result of the nonnegative integer linear combination 
   match = 0 # counter for matches
   for j0 in range(u+1):
-    if j0*l[0][0]+j1*l[1][0] <= a[0]:
+    if j0*l[0][0] <= a[0]:
       for j1 in range(u+1):
-        if j0*l[0][0] <= a[0]:
+        if j0*l[0][0]+j1*l[1][0] <= a[0]:
           for j2 in range(u+1):
             for j3 in range(u+1):
               for j4 in range(u+1):
