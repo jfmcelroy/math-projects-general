@@ -13,11 +13,11 @@ import numpy as np
 # for now, enter this manually
 e0 = np.array([1,-1,0,0,0])
 e1 = np.array([1,-1,0,0,0])
-e2 = np.array([1,0,0,0,-1])
+e2 = np.array([1,0,0,-1,0])
 e3 = np.array([0,1,-1,0,0])
 e4 = np.array([0,1,-1,0,0])
 e5 = np.array([0,0,1,-1,0])
-e6 = np.array([0,0,1,-1,0])
+e6 = np.array([0,0,1,0,-1])
 e7 = np.array([0,0,0,1,-1])
 e8 = np.array([0,0,0,1,-1])
 
@@ -30,7 +30,7 @@ for i in range(9):
 # target vector(s) aka netflows
 # for now, enter these manually
 # hopefully i'll get the composition generator program working evenutally
-targets = [np.array([3,-1,-1,-1,0]), np.array([2,0,-1,-1,0]), np.array([1,1,-1,-1,0]), np.array([0,2,-1,-1,0]), np.array([2,-1,0,-1,0]), np.array([1,0,0,-1,0]), np.array([0,1,0,-1,0]), np.array([1,-1,1,-1,0]), np.array([0,0,1,-1,0]), np.array([2,-1,-1,0,0]), np.array([1,0,-1,0,0]), np.array([0,1,-1,0,0]), np.array([1,-1,0,0,0]), np.array([0,0,0,0,0]) ]
+targets = [np.array([3,-1,-1,-1,0]), np.array([2,0,-1,-1,0]), np.array([1,1,-1,-1,0]), np.array([0,2,-1,-1,0]), np.array([2,-1,0,-1,0]), np.array([1,0,0,-1,0]), np.array([0,1,0,-1,0]), np.array([1,-1,1,-1,0]), np.array([0,0,1,-1,0]), np.array([2,-1,-1,0,0]), np.array([1,0,-1,0,0]), np.array([0,1,-1,0,0]), np.array([1,-1,0,0,0]) ]
 
 for a in targets:
   # print('target vector:', a) 
