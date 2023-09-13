@@ -22,7 +22,6 @@ print(int(abs(grid_filler(int(input("Please input n: "))))))
 
 # The block below provides some interesting insight into how the ratio of total combinations to solutions approaches e
 
-'''
 for i in range(50):
     f = i + 2 
     solutions = int(abs(grid_filler(int(f))))
